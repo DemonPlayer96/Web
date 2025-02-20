@@ -11,8 +11,15 @@ const nineBtn = document.getElementById("9");
 
 const showPlace = document.getElementById("show");
 
+const operationList = {};
+
+function zero() {
+    showPlace.textContent += "0";
+    operationList.add(0);
+}
 function one() {
     showPlace.textContent += "1";
+    operationList.add(1);
 }
 function two() {
     showPlace.textContent += "2";
