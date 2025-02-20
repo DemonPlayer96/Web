@@ -56,11 +56,17 @@ function plus() {
     showPlace.textContent = "";
 }
 function minus() {
-    showPlace.textContent += " - ";
+    firstNum = showPlace.textContent;
+    operator = "-";
+    showPlace.textContent = "";
 }
 function multiply() {
-    showPlace.textContent += " x ";
+    firstNum = showPlace.textContent;
+    operator = "*";
+    showPlace.textContent = "";
 }
 function division() {
-    showPlace.textContent += " / ";
+    firstNum = showPlace.textContent;
+    operator = "/";
+    showPlace.textContent = "";
 }

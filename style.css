@@ -10,7 +10,7 @@ body {
     background-color: rgb(59, 56, 56);
     display: inline-block;
     border-radius: 20px;
-    margin: 10px 10px 10px 10px;
+    padding-top: 11px;
 }
 #write {
     background-color: rgb(19, 19, 19);
@@ -29,6 +29,9 @@ body {
     max-width: 100%;
     font-size: 1.3em;
     word-wrap: break-word;
+}
+#show:empty:before {
+    content: "0";
 }
 #showPast {
     color: rgba(255, 255, 255, 0.381);
