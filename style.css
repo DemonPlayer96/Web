@@ -30,6 +30,13 @@ body {
     font-size: 1.3em;
     word-wrap: break-word;
 }
+#showPast {
+    color: rgba(255, 255, 255, 0.381);
+    display: inline;
+    max-width: 90%;
+    font-size: 0.9em;
+    word-wrap: break-word;
+}
 .numberButton {
     background-color: black;
     min-width: 50px;

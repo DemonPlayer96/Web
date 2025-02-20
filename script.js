@@ -1,5 +1,10 @@
 const showPlace = document.getElementById("show");
 
+let firstNum = 0;
+let secondNum = 0;
+let operator = "";
+let result = 0;
+
 function point() {
     if (!showPlace.textContent.includes(".")) {
         showPlace.textContent += ".";
@@ -39,10 +44,16 @@ function c() {
     showPlace.textContent = Math.floor(showPlace.textContent / 10);
 }
 function ac() {
+    firstNum = 0;
+    secondNum = 0;
+    operator = "";
+    result = 0;
     showPlace.textContent = "";
 }
 function plus() {
-    showPlace.textContent += " + ";
+    firstNum = showPlace.textContent;
+    operator = "+";
+    showPlace.textContent = "";
 }
 function minus() {
     showPlace.textContent += " - ";
