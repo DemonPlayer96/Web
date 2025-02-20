@@ -1,25 +1,15 @@
-const zeroBtn = document.getElementById("0");
-const oneBtn = document.getElementById("1");
-const twoBtn = document.getElementById("2");
-const threeBtn = document.getElementById("3");
-const fourBtn = document.getElementById("4");
-const fiveBtn = document.getElementById("5");
-const sixBtn = document.getElementById("6");
-const sevenBtn = document.getElementById("7");
-const eightBtn = document.getElementById("8");
-const nineBtn = document.getElementById("9");
-
 const showPlace = document.getElementById("show");
 
-const operationList = {};
-
+function point() {
+    if (!showPlace.textContent.includes(".")) {
+        showPlace.textContent += ".";
+    }
+}
 function zero() {
     showPlace.textContent += "0";
-    operationList.add(0);
 }
 function one() {
     showPlace.textContent += "1";
-    operationList.add(1);
 }
 function two() {
     showPlace.textContent += "2";
@@ -44,4 +34,22 @@ function eight() {
 }
 function nine() {
     showPlace.textContent += "9";
+}
+function c() {
+    showPlace.textContent = Math.floor(showPlace.textContent / 10);
+}
+function ac() {
+    showPlace.textContent = "";
+}
+function plus() {
+    showPlace.textContent += " + ";
+}
+function minus() {
+    showPlace.textContent += " - ";
+}
+function multiply() {
+    showPlace.textContent += " x ";
+}
+function division() {
+    showPlace.textContent += " / ";
 }

@@ -18,15 +18,17 @@ body {
     border-radius: 10px;
     min-width: 85%;
     max-width: 85%;
+    min-height: 100px;
     display: inline-block;
-    align-items: center;
-    text-align: center;
-    
+    text-align: left;
+    padding: 10px 10px 10px 10px;
 }
 #show {
     color: white;
     display: inline-block;
-    max-width: 90%;
+    max-width: 100%;
+    font-size: 1.3em;
+    word-wrap: break-word;
 }
 .numberButton {
     background-color: black;
