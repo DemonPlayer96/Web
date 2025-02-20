@@ -3,6 +3,8 @@ body {
     background-color: black;
 }
 #container {
+    max-width: 300px;
+    min-width: 300px;
     text-align: center;
     border: 1px solid black;
     background-color: rgb(59, 56, 56);
