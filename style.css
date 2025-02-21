@@ -33,6 +33,9 @@ body {
 #show:empty:before {
     content: "0";
 }
+#showPast:empty:before {
+    content: "0";
+}
 #showPast {
     color: rgba(255, 255, 255, 0.381);
     display: inline;
